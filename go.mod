@@ -1,4 +1,4 @@
-module pg_tui
+module github.com/Mercury1565/DBTui
 
 go 1.24.5
 

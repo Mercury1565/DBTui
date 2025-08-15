@@ -1,26 +1,3 @@
-// pg_tui.go
-// A lightweight PostgreSQL TUI visualizer built with Go, tview, and pgx.
-// Features:
-// - Browse schemas → tables → columns
-// - Preview table data (first N rows)
-// - Run ad-hoc SQL queries in an input box; results render in a grid
-// - Keyboard shortcuts: q (quit), F5 (run query), r (refresh list), Tab (cycle focus)
-//
-// Build:
-//
-//	go mod init pg_tui && \
-//	go get github.com/rivo/tview github.com/gdamore/tcell/v2 github.com/jackc/pgx/v5/pgxpool && \
-//	go build -o pg-tui
-//
-// Run (uses DATABASE_URL if no flags provided):
-//
-//	DATABASE_URL=postgres://user:pass@host:5432/dbname?sslmode=disable ./pg-tui
-//	./pg-tui -url "postgres://user:pass@host:5432/dbname?sslmode=disable" -limit 200
-//
-// Notes:
-// - Safe preview: SELECT * FROM schema.table LIMIT N (configurable)
-// - Simple error toasts at bottom when queries fail
-// - Read-only by default unless you type writes in the query box
 package main
 
 import (

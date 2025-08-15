@@ -2,7 +2,7 @@
 
 A lightweight, terminal-based user interface (TUI) for PostgreSQL built with Go.
 
-`dp-tui` provides a simple, keyboard-driven way to browse your PostgreSQL database schemas, tables, and columns, preview data, and run ad-hoc SQL queries.
+`DBTui` provides a simple, keyboard-driven way to browse your PostgreSQL database schemas, tables, and columns, preview data, and run ad-hoc SQL queries.
 
 ## Features
 
@@ -25,15 +25,15 @@ A lightweight, terminal-based user interface (TUI) for PostgreSQL built with Go.
 
 ### Using `go install`
 
-The simplest way to install `dp-tui` is by using the `go install` command. This will download the source, build the executable, and place it in your `$GOPATH/bin` directory. Ensure that `$GOPATH/bin` is in your system's `PATH`.
+The simplest way to install `DBTui` is by using the `go install` command. This will download the source, build the executable, and place it in your `$GOPATH/bin` directory. Ensure that `$GOPATH/bin` is in your system's `PATH`.
 
 ```bash
-go install github.com/Mercury1565/dp-tui@latest
+go install github.com/Mercury1565/DBTui@latest
 ```
 
 ## Usage
 
-`dp-tui` requires a PostgreSQL connection URL to run. You can provide this in one of two ways:
+`DBTui` requires a PostgreSQL connection URL to run. You can provide this in one of two ways:
 
 ### 1. Using the `DATABASE_URL` Environment Variable (Recommended)
 
@@ -41,7 +41,7 @@ Set the `DATABASE_URL` in your shell before running the application.
 
 ```bash
 export DATABASE_URL="postgres://user:pass@host:5432/dbname?sslmode=disable"
-dp-tui
+DBTui
 ```
 
 ### 2. Using the `-url` Flag
@@ -49,7 +49,7 @@ dp-tui
 Provide the connection string directly via the command-line flag.
 
 ```bash
-dp-tui -url "postgres://user:pass@host:5432/dbname?sslmode=disable"
+DBTui -url "postgres://user:pass@host:5432/dbname?sslmode=disable"
 ```
 
 ### Options
@@ -60,12 +60,12 @@ dp-tui -url "postgres://user:pass@host:5432/dbname?sslmode=disable"
 ### Example
 
 ```bash
-dp-tui -url "postgres://user:pass@host:5432/dbname" -limit 200
+DBTui -url "postgres://user:pass@host:5432/dbname" -limit 200
 ```
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit issues or pull requests to the [GitHub repository](https://github.com/Mercury1565/dp-tui).
+Contributions are welcome! Please feel free to submit issues or pull requests to the [GitHub repository](https://github.com/Mercury1565/DBTui).
 
 ## License
 
