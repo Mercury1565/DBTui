@@ -4,6 +4,8 @@ A lightweight, terminal-based user interface (TUI) for PostgreSQL built with Go.
 
 `DBTui` provides a simple, keyboard-driven way to browse your PostgreSQL database schemas, tables, and columns, preview data, and run ad-hoc SQL queries.
 
+![Screenshot of Project](assets/proj_img.png)
+
 ## Features
 
 - **Schema Navigation**: Easily browse through schemas, tables, and columns using a familiar tree-like interface.
@@ -31,11 +33,18 @@ The simplest way to install `DBTui` is by using the `go install` command. This w
 go install github.com/Mercury1565/DBTui@latest
 ```
 
+### Putting `$GOPATH/bin` in system path persistently
+
+```bash
+export PATH="$PATH:$(go env GOPATH)/bin"
+source ~/.bashrc   # or ~/.zshrc if you're on zsh
+```
+
 ## Usage
 
 `DBTui` requires a PostgreSQL connection URL to run. You can provide this in one of two ways:
 
-### 1. Using the `DATABASE_URL` Environment Variable (Recommended)
+### 1. Using the `DATABASE_URL` Environment Variable
 
 Set the `DATABASE_URL` in your shell before running the application.
 
