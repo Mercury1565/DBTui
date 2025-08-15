@@ -65,7 +65,7 @@ dp-tui -url "postgres://user:pass@host:5432/dbname" -limit 200
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit issues or pull requests to the [GitHub repository](https://github.com/your-username/dp-tui).
+Contributions are welcome! Please feel free to submit issues or pull requests to the [GitHub repository](https://github.com/Mercury1565/dp-tui).
 
 ## License
 
